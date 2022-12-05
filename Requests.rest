@@ -1,0 +1,41 @@
+GET http://localhost:7071/api/GetKinderen HTTP/1.1
+
+###
+
+POST http://localhost:7071/api/PostKinderen HTTP/1.1
+Content-Type: application/json
+
+{
+   "stamboeknummer":"K000003",
+   "Naam":"Beter",
+   "Voornaam":"TEEBOOOOOOO",
+   "klas":"2C",
+   "Email":"ikgeefop@gmail.com"
+}
+
+###
+
+GET http://localhost:7071/api/K000001 HTTP/1.1
+
+###
+
+POST http://localhost:7071/api/addMaaltijd HTTP/1.1
+Content-Type: application/json
+
+{
+   "stamboeknummer":"K000001",
+   "keuze":[
+      {
+         "warm":"false"
+      },
+      {
+         "boterhammen":"true"
+      },
+      {
+         "nietopschool":"false"
+      }
+   ],
+   "datum":"01/01/2022"
+}
+
+###
